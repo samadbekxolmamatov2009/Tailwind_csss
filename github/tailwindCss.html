@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en ">
+<head>
+    <meta charset="UTF-8 ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styletailwind.css">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<style>
+    *{
+        transition: 0.3s;
+        h1{
+            color: white;
+            font-size: 35px;
+        }
+        p{
+            color: white;
+        }
+        h2{
+            font-size: 25px;
+            color: white;
+        }
+    }
+</style>
+<body class="bg-black " style="font-family:'Quicksand',sans-serif;">
+
+    <!-- topbar-start  -->
+    <div class="flex justify-between items-center h-20 px-[10%] backdrop-blur-3xl sticky top-0 left-0 right-0 z-10 bg-yellow-500/20 shadow-lg shadow-yellow-500">
+
+        <img src="images/images/logo.png" class="h-full" alt="">
+        <div class="flex gap-4 text-white font-bold">
+            
+            <a class="duration-300 hover:text-yellow-500 hover:underline" href="#home">Home</a>
+            <a class="duration-300 hover:text-yellow-500 hover:underline" href="#about">About</a>
+            <a class="duration-300 hover:text-yellow-500 hover:underline" href="#menu">Menu</a>
+            <a class="duration-300 hover:text-yellow-500 hover:underline" href="#gallery">Gallery</a>
+            <a class="duration-300 hover:text-yellow-500 hover:underline" href="#contact">Contact</a>
+           
+        </div>
+    </div>
+
+    <!-- header-start  -->
+    <div class="pt-2 bg-[url('images/images/home_bg.jpeg')] bg-cover bg-center h-screen flex items-center justify-center">
+
+        <div class="text-white text-center">
+
+            <h1 class="text-5xl font-bold mb-4 ">Welcome to <span class="text-yellow-500"> Food lover</span> Restaurant</h1>
+            <p class="text-lg mb-4 ">Here you can find Most delicacies food in the world </p>
+            <div class="flex gap-4  justify-center">
+
+                <button class="bg-yellow-500 px-7 py-3 rounded-full uppercase font-bold hover:bg-yellow-600 durtion-300 cursor-pointer text-xl shadow-lg shadow-yellow-500">Read more
+                    <i class='bx bx-right-arrow-alt bx-fade-left' ></i>
+                </button>
+
+                <button class="bg-yellow-500 px-7 py-3 rounded-full uppercase font-bold hover:bg-yellow-600 durtion-300 cursor-pointer text-xl shadow-lg shadow-yellow-500">Read more
+                    <i class='bx bx-phone bx-tada' ></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- menu-start  -->
+     
+  <div class="px-[10%] py-20 text-center">
+    <h2 class="text-4xl font-bold mb-4">The Food Lover history</h2>
+    <p class="text-lg mb-4">More than 25+ years of experience</p>
+    <div class="flex gap-4 justify-center bg-yellow-500/20 rounded-xl p-5">
+      <button class="duration-300 hover:bg-yellow-500 hover:text-white rounded-xl border-2 border-yellow-500 px-7 py-2 text-yellow-500 shadow-lg hover:shadow-yellow-500 hover:scale-110 cursor-pointer">Paris</button>
+      <button class="duration-300 hover:bg-yellow-500 hover:text-white rounded-xl border-2 border-yellow-500 px-7 py-2 text-yellow-500 shadow-lg hover:shadow-yellow-500 hover:scale-110 cursor-pointer">London</button>
+      <button class="duration-300 hover:bg-yellow-500 hover:text-white rounded-xl border-2 border-yellow-500 px-7 py-2 text-yellow-500 shadow-lg hover:shadow-yellow-500 hover:scale-110 cursor-pointer">Dubai</button>
+      <button class="duration-300 hover:bg-yellow-500 hover:text-white rounded-xl border-2 border-yellow-500 px-7 py-2 text-yellow-500 shadow-lg hover:shadow-yellow-500 hover:scale-110 cursor-pointer">Moscow</button>
+      <button class="duration-300 hover:bg-yellow-500 hover:text-white rounded-xl border-2 border-yellow-500 px-7 py-2 text-yellow-500 shadow-lg hover:shadow-yellow-500 hover:scale-110 cursor-pointer">Tashkent</button>
+    </div>
+    <div class="flex gap-10 justify-between items-center mt-10">
+      <p class="w-1/2 text-left text-white text-xl"><span class="text-yellow-500">Paris</span> is home to some of the world's finest culinary traditions. Our restaurant brings authentic Parisian flavors and ambiance to your dining experience. With carefully selected ingredients and time-honored recipes passed down through generations, we create memorable dishes that transport you to the charming streets of Paris. Our expert chefs combine classical French techniques with modern innovation to deliver an exceptional dining experience that honors both tradition and creativity.</p>
+      <img class="w-1/2" src="images/images/about_img.png" alt="">
+    </div>
+  </div>
+
+  <!-- special-start  -->
+   <div class="px-[10%] py-20 text-center h-screen" style="background-image: url(images/images/offer-background.jpg);background-size: cover;background-position: center;">
+    <div>
+        <h1 class="text-4xl font-bold mb-[10px]">Our Special Offers</h1>
+        <p class="text-lg font-semibold mb-[20px]">More than 25+ years of experience</p>
+    </div>
+    <!-- special-flex-start  -->
+     <div class="flex justify-around items-center gap-5">
+        <div class="flex justify-center items-center flex-col w-[300px] h-[400px] bg-transparent rounded-xl hover:shadow-blue-900 shadow-2xl duration-500">
+            <img class="w-[150px]" src="images/images/food1.png" alt="">
+            <h2>Quotro Pasta</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, quibusdam.</p>
+            <span>$55.00</span><span class="font-bold text-yellow-500">$38.00</span>
+        </div>
+        <div class="flex justify-center items-center flex-col w-[300px] h-[400px] bg-transparent rounded-xl hover:shadow-blue-900 shadow-2xl duration-500">
+            <img src="images/images/food6.png" alt="">
+            <h2>Quotro Pasta</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, quibusdam.</p>
+            <span>$55.00</span><span class="font-bold text-yellow-500">$38.00</span>
+        </div>
+        <div class="flex justify-center items-center flex-col w-[300px] h-[400px] bg-transparent rounded-xl hover:shadow-blue-900 shadow-2xl duration-500">
+            <img src="images/images/food1.png" alt="">
+            <h2>Quotro Pasta</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, quibusdam.</p>
+            <span>$55.00</span><span class="font-bold text-yellow-500">$38.00</span>
+        </div>
+     </div>
+   </div>
+
+   <!-- our-special-menu=start  -->
+    <div class="px-[2%] py-20 text-center h-screen">
+        <div class="">
+            <h1>Our Special Menu</h1>
+            <p>Order two and get third for free</p>
+        </div>
+        <div class="">
+            <div class="flex flex-wrap  justify-around items-center">
+
+                <div class="flex justify-center items-center border-4 border-white rounded-lg p-[4px] my-[15px] hover:scale-[1.15] duration-500 ">
+                    <img src="images/images/food2.png" alt="">
+                    <div class="relative text-left ml-[10px]">
+                        <h2 class="mb-[4px]" >JUMBO CRAB SHRIMP</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing <br>  elit. Enim, earum.</p>
+                        <span class="text-yellow-600 absolute top-0 right-0 p-[10px]">$24.00</span>
+                    </div>
+                </div>
+
+                <div class="flex justify-center items-center border-4 border-white rounded-lg p-[4px] my-[15px] hover:scale-[1.15] duration-500 ">
+                    <img src="images/images/food2.png" alt="">
+                    <div class="relative text-left ml-[10px]">
+                        <h2 class="mb-[4px]" >JUMBO CRAB SHRIMP</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing <br>  elit. Enim, earum.</p>
+                        <span class="text-yellow-600 absolute top-0 right-0 p-[10px]">$24.00</span>
+                    </div>
+                </div>
+
+                <div class="flex justify-center items-center border-4 border-white rounded-lg p-[4px] my-[15px] hover:scale-[1.15] duration-500 ">
+                    <img src="images/images/food2.png" alt="">
+                    <div class="relative text-left ml-[10px]">
+                        <h2 class="mb-[4px]" >JUMBO CRAB SHRIMP</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing <br>  elit. Enim, earum.</p>
+                        <span class="text-yellow-600 absolute top-0 right-0 p-[10px]">$24.00</span>
+                    </div>
+                </div>
+
+                <div class="flex justify-center items-center border-4 border-white rounded-lg p-[4px] my-[15px] hover:scale-[1.15] duration-500 ">
+                    <img src="images/images/food2.png" alt="">
+                    <div class="relative text-left ml-[10px]">
+                        <h2 class="mb-[4px]" >JUMBO CRAB SHRIMP</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing <br>  elit. Enim, earum.</p>
+                        <span class="text-yellow-600 absolute top-0 right-0 p-[10px]">$24.00</span>
+                    </div>
+                </div>
+
+                <div class="flex justify-center items-center border-4 border-white rounded-lg p-[4px] my-[15px] hover:scale-[1.15] duration-500 ">
+                    <img src="images/images/food2.png" alt="">
+                    <div class="relative text-left ml-[10px]">
+                        <h2 class="mb-[4px]" >JUMBO CRAB SHRIMP</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing <br>  elit. Enim, earum.</p>
+                        <span class="text-yellow-600 absolute top-0 right-0 p-[10px]">$24.00</span>
+                    </div>
+                </div>
+
+                <div class="flex justify-center items-center border-4 border-white rounded-lg p-[4px] my-[15px] hover:scale-[1.15] duration-500 ">
+                    <img src="images/images/food2.png" alt="">
+                    <div class="relative text-left ml-[10px]">
+                        <h2 class="mb-[4px]" >JUMBO CRAB SHRIMP</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing <br>  elit. Enim, earum.</p>
+                        <span class="text-yellow-600 absolute top-0 right-0 p-[10px]">$24.00</span>
+                    </div>
+                </div>
+
+                <div class="flex justify-center items-center border-4 border-white rounded-lg p-[4px] my-[15px] hover:scale-[1.15] duration-500 ">
+                    <img src="images/images/food2.png" alt="">
+                    <div class="relative text-left ml-[10px]">
+                        <h2 class="mb-[4px]" >JUMBO CRAB SHRIMP</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing <br>  elit. Enim, earum.</p>
+                        <span class="text-yellow-600 absolute top-0 right-0 p-[10px]">$24.00</span>
+                    </div>
+                </div>
+
+                <div class="flex justify-center items-center border-4 border-white rounded-lg p-[4px] my-[15px] hover:scale-[1.15] duration-500 ">
+                    <img src="images/images/food2.png" alt="">
+                    <div class="relative text-left ml-[10px]">
+                        <h2 class="mb-[4px]" >JUMBO CRAB SHRIMP</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing <br>  elit. Enim, earum.</p>
+                        <span class="text-yellow-600 absolute top-0 right-0 p-[10px]">$24.00</span>
+                    </div>
+                </div>
+                 <!-- button  -->
+                <div class="mb-[80px]">
+                    <button class="bg-yellow-500 px-7 py-3 rounded-full uppercase font-bold hover:bg-yellow-600 durtion-300 cursor-pointer text-xl shadow-lg shadow-yellow-500">Read more
+                    <i class='bx bx-right-arrow-alt bx-fade-left' ></i>
+                </button>
+
+                <button class="bg-yellow-500 px-7 py-3 rounded-full uppercase font-bold hover:bg-yellow-600 durtion-300 cursor-pointer text-xl shadow-lg shadow-yellow-500">Read more
+                    <i class='bx bx-phone bx-tada' ></i>
+                </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- breakfast-start  -->
+    <div class="text-center py-[30px] flex justify-around items-center mt-[300px]" style="background-image: url(images/images/daytime_bg.jpeg);background-size: cover;background-position: center;">
+        <div class="flex flex-col text-center border-0 border-black hover:shadow-2xl shadow-gray-900 p-[20px] rounded-2xl">
+            <img src="images/images/lunchIcon.png" alt="">
+            <h1>Breakfast</h1>
+            <p>8:00 am to 10:00 am</p>
+        </div>
+        <div class="flex flex-col text-center border-0 border-black hover:shadow-2xl shadow-gray-900 p-[20px] rounded-2xl">
+            <img src="images/images/lunchIcon.png" alt="">
+            <h1>Breakfast</h1>
+            <p>8:00 am to 10:00 am</p>
+        </div>
+        <div class="flex flex-col text-center border-0 border-black hover:shadow-2xl shadow-gray-900 p-[20px] rounded-2xl">
+            <img src="images/images/lunchIcon.png" alt="">
+            <h1>Breakfast</h1>
+            <p>8:00 am to 10:00 am</p>
+        </div>
+        <div class="flex flex-col text-center border-0 border-black hover:shadow-2xl shadow-gray-900 p-[20px] rounded-2xl">
+            <img src="images/images/lunchIcon.png" alt="">
+            <h1>Breakfast</h1>
+            <p>8:00 am to 10:00 am</p>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
